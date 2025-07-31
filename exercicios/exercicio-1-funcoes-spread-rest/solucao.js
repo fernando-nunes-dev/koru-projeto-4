@@ -10,5 +10,4 @@ const addIsAdultProperty = (personObject) => {
 };
 
 console.log("Desafio 1-a (Fernando):", addIsAdultProperty(person));
-
 console.log("Desafio 1-a (Anna):", addIsAdultProperty(person2));
