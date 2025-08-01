@@ -18,3 +18,12 @@ const pricesWithTax = products.map((product) => {
 });
 
 console.log("Desafio 2-b:", pricesWithTax);
+
+// Solução do desafio 2-c
+let totalValue = 0;
+
+products.forEach((product) => {
+  totalValue += product.price;
+});
+
+console.log("Desafio 2-c (Valor Total):", totalValue.toFixed(2));
