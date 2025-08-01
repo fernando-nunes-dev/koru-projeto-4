@@ -35,3 +35,7 @@ console.log("\ne. Todos os produtos têm avaliações?", allHaveReviews);
 // f. Encontrar o índice do produto "Cafeteira"
 const coffeeMakerIndex = inventory.findIndex(product => product.name === "Cafeteira");
 console.log("\nf. Índice do produto 'Cafeteira':", coffeeMakerIndex);
+
+// g. Encontrar o primeiro produto da categoria "Vestuário"
+const firstApparel = inventory.find(product => product.category === "Vestuário");
+console.log("\ng. Primeiro produto de Vestuário:", firstApparel);
