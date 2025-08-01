@@ -31,3 +31,7 @@ console.log("\nd. Existe algum produto sem estoque?", anyOutOfStock);
 // e. Verificar se todos os produtos têm pelo menos uma avaliação (review)
 const allHaveReviews = inventory.every(product => product.reviews.length > 0);
 console.log("\ne. Todos os produtos têm avaliações?", allHaveReviews);
+
+// f. Encontrar o índice do produto "Cafeteira"
+const coffeeMakerIndex = inventory.findIndex(product => product.name === "Cafeteira");
+console.log("\nf. Índice do produto 'Cafeteira':", coffeeMakerIndex);
