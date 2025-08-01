@@ -21,3 +21,12 @@ const highPriorityTasks = tasks.filter((task) => task.priority === "alta");
 const allHighPriorityAreIncomplete = highPriorityTasks.every((task) => !task.completed);
 
 console.log("Desafio 4-c (Todas as tarefas de alta prioridade estão incompletas?):", allHighPriorityAreIncomplete);
+
+// Solução do desafio 4-d
+const nonExistentTaskIndex = tasks.findIndex((task) => task.id === 10);
+
+if (nonExistentTaskIndex === -1) {
+  console.log("Desafio 4-d: Tarefa com id 10 não encontrada.");
+} else {
+  console.log("Desafio 4-d: Tarefa encontrada no índice:", nonExistentTaskIndex);
+}
