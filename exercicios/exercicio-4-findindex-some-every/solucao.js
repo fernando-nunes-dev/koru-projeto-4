@@ -8,3 +8,10 @@ const tasks = [
 const firstIncompleteTaskIndex = tasks.findIndex((task) => !task.completed);
 
 console.log("Desafio 4-a (Índice da 1ª tarefa incompleta):", firstIncompleteTaskIndex);
+
+// Solução do desafio 4-b
+const hasCompletedLowPriority = tasks.some(
+  (task) => task.priority === "baixa" && task.completed
+);
+
+console.log("Desafio 4-b (Existe tarefa completa de baixa prioridade?):", hasCompletedLowPriority);
