@@ -60,3 +60,12 @@ const inventoryWithAvgRating = inventory.map(product => {
     };
 });
 console.log("\ni. Inventário com média de avaliações:", inventoryWithAvgRating);
+
+// j. Encontrar o produto com a maior média de avaliações
+const productWithHighestRating = inventoryWithAvgRating.reduce((bestProduct, currentProduct) => {
+    if (currentProduct.averageRating > bestProduct.averageRating) {
+        return currentProduct;
+    }
+    return bestProduct;
+});
+console.log("\nj. Produto com a maior média de avaliação:", productWithHighestRating);
