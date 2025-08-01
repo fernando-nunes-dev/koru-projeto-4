@@ -48,3 +48,15 @@ const searchProducts = (term) => {
     );
 };
 console.log("\nh. Buscando por 'phone':", searchProducts("phone"));
+
+// i. Calcular a média de avaliações e adicionar como "averageRating"
+const inventoryWithAvgRating = inventory.map(product => {
+    const sumOfReviews = product.reviews.reduce((acc, review) => acc + review, 0);
+    const averageRating = product.reviews.length > 0 ? sumOfReviews / product.reviews.length : 0;
+    
+    return {
+        ...product,
+        averageRating: parseFloat(averageRating.toFixed(2))
+    };
+});
+console.log("\ni. Inventário com média de avaliações:", inventoryWithAvgRating);
