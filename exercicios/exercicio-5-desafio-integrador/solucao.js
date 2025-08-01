@@ -23,3 +23,7 @@ const cheapElectronics = inventory.filter(
     product => product.category === "Eletrônicos" && product.price < 1000
 );
 console.log("\nc. Eletrônicos com preço < 1000:", cheapElectronics);
+
+// d. Verificar se há algum produto sem estoque
+const anyOutOfStock = inventory.some(product => product.stock === 0);
+console.log("\nd. Existe algum produto sem estoque?", anyOutOfStock);
