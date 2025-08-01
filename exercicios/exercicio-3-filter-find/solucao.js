@@ -22,3 +22,13 @@ const studentsWithLowGrade = students.filter((student) => {
 });
 
 console.log("Desafio 3-c (Alunos com nota < 70):", studentsWithLowGrade);
+
+// Solução do desafio 3-d
+const highAchieversNames = students
+  .filter((student) => {
+    const average = student.grades.reduce((sum, grade) => sum + grade, 0) / student.grades.length;
+    return average > 85;
+  })
+  .map((student) => student.name); 
+
+console.log("Desafio 3-d (Nomes dos alunos com média > 85):", highAchieversNames);
