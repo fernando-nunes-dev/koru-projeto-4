@@ -10,20 +10,3 @@ const productStrings = products.map((product) => {
 });
 
 console.log("Desafio 2-a:", productStrings);
-
-// Solução do desafio 2-b
-const pricesWithTax = products.map((product) => {
-  const priceWithTax = product.price * 1.15;
-  return parseFloat(priceWithTax.toFixed(2));
-});
-
-console.log("Desafio 2-b:", pricesWithTax);
-
-// Solução do desafio 2-c
-let totalValue = 0;
-
-products.forEach((product) => {
-  totalValue += product.price;
-});
-
-console.log("Desafio 2-c (Valor Total):", totalValue.toFixed(2));
