@@ -13,3 +13,7 @@ console.log("a. Lista de Produtos no Inventário:");
 inventory.forEach(product => {
     console.log(`- ${product.name} (R$ ${product.price}) | Estoque: ${product.stock}`);
 });
+
+// b. Filtrar produtos que estão em estoque (stock > 0)
+const inStockProducts = inventory.filter(product => product.stock > 0);
+console.log("\nb. Produtos em estoque:", inStockProducts);
