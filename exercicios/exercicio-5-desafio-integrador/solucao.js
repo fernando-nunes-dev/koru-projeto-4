@@ -39,3 +39,12 @@ console.log("\nf. Índice do produto 'Cafeteira':", coffeeMakerIndex);
 // g. Encontrar o primeiro produto da categoria "Vestuário"
 const firstApparel = inventory.find(product => product.category === "Vestuário");
 console.log("\ng. Primeiro produto de Vestuário:", firstApparel);
+
+// h. Criar uma função de busca que retorna produtos cujo nome contenha um termo específico
+const searchProducts = (term) => {
+    const lowerCaseTerm = term.toLowerCase();
+    return inventory.filter(product => 
+        product.name.toLowerCase().includes(lowerCaseTerm)
+    );
+};
+console.log("\nh. Buscando por 'phone':", searchProducts("phone"));
