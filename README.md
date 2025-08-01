@@ -32,19 +32,8 @@ As seguintes ferramentas e tecnologias foram utilizadas no desenvolvimento deste
 ## 📁 Estrutura do Projeto
 
 O projeto foi organizado da seguinte forma para manter a clareza e a separação de responsabilidades:
-├── .git/
-├── exercicios/
-│   ├── exercicio-1-funcoes-spread-rest/
-│   │   └── solucao.js
-│   ├── exercicio-2-foreach-map/
-│   │   └── solucao.js
-│   ├── exercicio-3-filter-find/
-│   │   └── solucao.js
-│   ├── exercicio-4-findindex-some-every/
-│   │   └── solucao.js
-│   └── exercicio-5-desafio-integrador/
-│       └── solucao.js
-└── README.md
+<img width="293" height="269" alt="image" src="https://github.com/user-attachments/assets/a0d16252-a15a-4fb0-879a-28c133098925" />
+
 
 ## 🚀 Como Executar
 
