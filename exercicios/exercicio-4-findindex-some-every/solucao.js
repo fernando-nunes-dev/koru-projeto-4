@@ -15,3 +15,9 @@ const hasCompletedLowPriority = tasks.some(
 );
 
 console.log("Desafio 4-b (Existe tarefa completa de baixa prioridade?):", hasCompletedLowPriority);
+
+// Solução do desafio 4-c
+const highPriorityTasks = tasks.filter((task) => task.priority === "alta");
+const allHighPriorityAreIncomplete = highPriorityTasks.every((task) => !task.completed);
+
+console.log("Desafio 4-c (Todas as tarefas de alta prioridade estão incompletas?):", allHighPriorityAreIncomplete);
