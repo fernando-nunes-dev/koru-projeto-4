@@ -17,3 +17,9 @@ inventory.forEach(product => {
 // b. Filtrar produtos que estão em estoque (stock > 0)
 const inStockProducts = inventory.filter(product => product.stock > 0);
 console.log("\nb. Produtos em estoque:", inStockProducts);
+
+// c. Filtrar produtos da categoria "Eletrônicos" com preço < 1000
+const cheapElectronics = inventory.filter(
+    product => product.category === "Eletrônicos" && product.price < 1000
+);
+console.log("\nc. Eletrônicos com preço < 1000:", cheapElectronics);
