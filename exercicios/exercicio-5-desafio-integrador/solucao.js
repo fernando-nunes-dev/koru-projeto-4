@@ -27,3 +27,7 @@ console.log("\nc. Eletrônicos com preço < 1000:", cheapElectronics);
 // d. Verificar se há algum produto sem estoque
 const anyOutOfStock = inventory.some(product => product.stock === 0);
 console.log("\nd. Existe algum produto sem estoque?", anyOutOfStock);
+
+// e. Verificar se todos os produtos têm pelo menos uma avaliação (review)
+const allHaveReviews = inventory.every(product => product.reviews.length > 0);
+console.log("\ne. Todos os produtos têm avaliações?", allHaveReviews);
